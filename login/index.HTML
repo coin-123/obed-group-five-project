@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- login section -->
+        <form action="" class="form" id="login">
+            <h1 class="title">Login</h1>
+            <div class="form__message form__message--error">
+                <p> </p>
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="user" class="form__input"
+                 placeholder="username or email">
+                <div class="form__input-error-message">
+                    <!-- This is an error message -->
+                </div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" name="password"
+                 placeholder="password">
+                <div class="form__inptu-error-message"></div>
+            </div>
+                <button class="form__button" type="submit">Continue</button>
+
+            <p class="form__text">
+                <a href="pass.html" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+<!--  -->
+
+        
+        <!-- create account section -->
+         <form action="" class="form form--hidden" id="createAccount">
+            <h1 class="title">Create Account</h1>
+            <div class="form__message form__message--error">
+                <!-- Incorrect username/password combination. -->
+            </div>
+            <div class="name">
+                <p class="first">Name</p>
+                <div class="bal">
+                <label class="lab">
+                    <input type="text">
+                    <p>First</p>
+                </label>
+                <label class="lab">
+                    <input type="text">
+                    <p>Last</p>
+                </label>
+            </div>
+        </div>
+
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input"
+                autofocus placeholder="Username">
+                <div class="form__input-error-message">
+                    <!-- This is an error message -->
+                </div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input"
+                autofocus placeholder="Email Address">
+                <div class="form__input-error-message">
+                    <!-- This is an error message -->
+                </div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input"
+                autofocus placeholder="password">
+                <div class="form__inptu-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input"
+                autofocus placeholder="Confirm Password">
+                <div class="form__inptu-error-message"></div>
+            </div>
+
+            <div class="check">
+                <div class="one">
+                 <input type="checkbox" class="single-checkbox">
+                 <p>Male</p>
+                </div>
+                 <div class="one">
+                     <input type="checkbox" class="single-checkbox">
+                     <p>Woman</p>
+                 </div>
+                 </div>
+     
+
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? sign in</a>
+            </p>
+            <!-- <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p> -->
+        </form>
+
+        <!--  -->
+
+    </div>
+</body>
+</html>

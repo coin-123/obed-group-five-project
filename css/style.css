@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#f7cdcd, #c2f7f8);
+
+    /* background: url(../image/graduationImage.jpg) no-repeat center center/cover; */
+}
+
+.cover{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* HEADER: */
+header {
+    width: 100%;
+    position: relative;
+    background: rgb(87, 45, 45);
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+    border-radius: 50px;
+    border-style: dotted;
+    border-color: antiquewhite;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all 2s;
+
+}
+
+.navbar .links a:hover{
+        color: orange;
+        background-color: blue; 
+        font-size: 1.5rem;
+        text-decoration: underline;  
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 20%;
+    background: #ffaaaa;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+}   
+
+.dropdown_menu.open{
+    height: 200px;
+    width: 100%;
+    right: 0;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* list-style: none; */
+}
+
+.dropdown_menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* WRAP STYLING */
+#wrap{
+    width: 100%;
+    display: flex;
+    /* color: white; */
+}
+
+/* LEFT */
+#wrap .left {    
+    width: 50%;
+    margin-left: 50px;
+}
+
+.left h1{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    font-family: cursive;
+    color: rgb(154, 248, 248);
+    /* z-index: -100; */
+}
+
+.left a{
+    text-decoration: none;
+    animation: shrink 5s infinite;
+}
+
+@keyframes shrink{
+   0%{
+    transform: translateX(0);
+    color: rgb(154, 248, 248);
+   } 
+
+   25%{
+    transform: translateX(5rem);
+    color: chocolate;
+   }
+
+   50%{
+    transform: translateX(5rem);
+    color: rgb(5, 185, 5);
+   }
+
+   75%{
+    transform: translateX(5rem);
+    color: rgb(254, 6, 6);
+   }
+
+   100%{
+    transform: translateX(0);
+    color: gray;
+   }
+}
+
+.left h2{
+    font-size: xx-large;
+    width: 100%;  
+}
+
+.left ul{
+    list-style: circle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.left ul li{
+    margin: 15px;
+    /* color: rgb(250, 239, 239); */
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left p{
+    font-size: 50px;
+}
+
+/* RIGHT */
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 15px;
+}
+
+.right img{
+    width: 60%;
+    height: 50%;
+    margin-left: 6rem;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: brown;
+    border-style: dashed;
+    animation: bright 5s  ease-in;
+}
+
+@keyframes bright{
+    0%{
+        transform: scale(1,2);
+    }
+
+    50%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+
+
+}
+
+
+
+/* ABOUT STARTS HERE: */
+
+#cont{
+    display: flex;
+    overflow-x: hidden;
+    background-image: linear-gradient(#f7cdcd, #c2f7f8);
+
+    /* background: url(../image/graduation.jpg) no-repeat center center/cover; */
+}
+
+#about{
+    width: 50%;
+    margin: auto;
+    /* color: white; */
+    text-align: justify;
+}
+
+#about h1{
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+#about .first{
+    font-size: larger;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.to-right{
+    width: 40%;
+    margin-top: 5rem;
+}
+
+.to-right img{
+    width: 50%;
+    animation: rotate 3s infinite;
+    margin-left: 15px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    5%{
+        transform: rotate(18deg);
+    }
+
+    10%{
+        transform: rotate(36deg);
+    }
+
+    15%{
+        transform: rotate(54deg);
+    }
+    
+    20%{
+        transform: rotate(72deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    30%{
+        transform: rotate(108deg);
+    }
+
+    35%{
+        transform: rotate(126deg);
+    }
+
+    40%{
+        transform: rotate(144deg);
+    }
+
+    45%{
+        transform: rotate(162deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    55%{
+        transform: rotate(198deg);
+    }
+
+    60%{
+        transform: rotate(216deg);
+    }
+
+    65%{
+        transform: rotate(234deg);
+    }
+
+    70%{
+        transform: rotate(252deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+        }
+
+    80%{
+        transform: rotate(288deg);
+        }
+
+    85%{
+        transform: rotate(306deg);
+    }
+
+    90%{
+        transform: rotate(324deg);
+            }
+
+    95%{
+        transform: rotate(342deg);
+            }
+
+    100%{
+        transform: rotate(360deg);
+        }
+
+}
+
+
+.home{
+    margin-left: 5rem;
+    margin-top: -1rem;
+    animation: arrow 2s infinite;
+    font-size: 6rem;
+}
+
+.home a{
+    color: rgb(87, 45, 45);
+
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+
+@keyframes arrow {
+    0%{
+        transform: translate(0);
+    }
+
+    25%{
+        transform: translate(3px);
+    }
+
+    50%{
+        transform: translate(5px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+/* FOOTER STARTS HERE */
+
+footer{
+    width: 100%;
+}
+
+footer h3{
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    /* color: #fff; */
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+footer i{
+    /* color: #fff; */
+    font-size: x-large;
+    margin-left: 140px;
+}
+
+
+
+/* COURSES STARTS HERE */
+
+.wrapper{
+    background-image: linear-gradient(#f7cdcd, #c2f7f8);
+
+    /* background: url(../image/graduation.jpg) no-repeat center center/cover; */
+    display: grid;
+    /* color: white; */
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.wrapper h1{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.course{
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.course h4{
+    padding-left: 3rem;
+    font-size: large;
+}
+
+.course ul{
+    margin-top: 4rem;
+    margin-left: -10rem;
+    list-style: circle;
+}
+
+.course ul li{
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.course ul li a{
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+.course ul li a:hover{
+    color: orange;
+    background-color: #00ff;
+    font-size: larger;
+    transition: all 2s;
+}
+
+.wrapper .home a{
+    margin-left: 30rem;
+
+}
+
+
+/* CONTACT US STARTS HERE */
+
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#f7cdcd, #c2f7f8);
+    padding-top: 2rem;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    /* color: black; */
+    /* background: transparent; */
+    font-size: 15px;
+}
+
+label{
+    /* height: 100%; */
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    padding: 10px;
+    /* color: black; */
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+
+.chome{
+    margin-left: 38rem;
+    margin-top: -7.5rem;
+    animation: arrow 2s infinite;
+    font-size: 6rem;
+}
+
+.chome a{
+    color: rgb(87, 45, 45);
+    text-decoration: none;
+}
+
+
+
+
+
+ /* RESPONSIVENESS */
+
+ @media (max-width: 740px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+
+
+    /* WRAP */
+    #wrap{
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .left h1{
+        width: 100%;
+        margin-top: 1rem;
+        font-size: x-large;
+    }
+
+    .left h2{
+        font-size: large;
+        padding-left: 30px;
+    }
+
+    .left ul li{
+        font-size: medium;
+        padding-left: 20px;
+    }
+
+    .left p{
+        font-size: x-large;
+        font-weight: bolder;
+        margin-left: 2rem;
+        padding-left: 10px;
+        /* text-align: center; */
+    }
+    
+    /* RIGHT */
+    .right{
+        margin-top: 2rem;
+        gap: 10px;
+        margin-left: 2rem;
+    }
+    
+    .right img{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer h3{
+        top: -10px;
+        font-size: medium;
+    }
+
+    footer i{
+        font-size: large;
+        margin-left: 0;
+        padding-left: 50px;
+        place-content: ;
+    }
+
+    
+    /* ABOUT STARTS HERE */
+    #cont{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about{
+        width: 100%;
+        margin: auto;
+    }
+    
+    #about h1{
+        font-size: large;
+    }
+    
+    #about p{
+        font-size: large;
+    }
+    
+    .to-right{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .to-right img{
+        width: 100%; 
+    }
+    
+    .to-right .home{
+        margin-top: -3rem;
+        margin: auto;
+    }
+    
+    /* COURSES STARTS HERE */
+    .wrapper{
+        width: 100%;
+    }
+    
+    .wrapper h1{
+        /* margin: auto; */
+        width: 100%;
+        font-size: x-large;
+        padding-left: 3rem;
+    }
+    
+    .course {
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        /* padding-left: -7rem; */
+    }
+    
+    .course h4{
+        margin-left: -1rem;
+        font-weight: bolder;
+    }
+    
+    .course .list{
+        margin-left: 11rem;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .wrapper .home a{
+        font-size: 2rem;
+        /* margin-top: 30rem; */
+        text-align: left;
+        margin-left: 4rem;
+        /* background-color: red; */
+    }
+
+    /* CONTACT US STARTS HERE */
+    .chome{
+        margin-left: 10rem;
+        padding-top: 4.5rem;
+        font-size: 4rem;
+    }
+    
+ }

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.done{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:black; */
+    background-image: linear-gradient(#f8c1c1 , #c2f7f8);
+    /* background-image: linear-gradient(#f8c1c1 , #c2f7f8); */
+}
+.container{
+    /* background-color: #ffffffff; */
+    height: 85%;
+    background-image: linear-gradient(#f8c1c1 , #c2f7f8);
+    width: 60%;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    50%{
+        box-shadow: 5px 5px 5px 5px rgb(199, 179, 179);
+    }
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: center;
+}
+.container form h1{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ee7e7e ;
+}
+.container form p{
+    font-size: xx-large;
+    text-shadow: 2px 5px 5px black;
+    color:#ee7e7e ;
+}
+.pass__input{
+    width: 40%;
+}
+.mis input {
+    height: 30px;
+    border-radius: 10px;
+    width:100%;
+}
+
+.in input {
+    height: 30px;
+    border-radius: 10px;
+
+    width:100%;
+}
+.two{
+    width: 350px;
+}
+.two button{
+    padding: 10px;
+    margin-right: 10px;
+}
+.nue{
+    background-color: #ee7e7e ;
+    color: #ffffff;
+}
+.two a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.container form i{
+    color: #c2f7f8;
+    font-size: 100px;
+    position: absolute;
+    top: 20px;
+}
+/* .both-input-checkbox{
+} */
+.special input{
+    transform: scale(0.3);
+}
